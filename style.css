@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.logo img {
+  width: 8rem;
+  height: 3.3rem;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+  width: 80vw;
+  padding: 15px;
+  font-size: 0.9rem;
+  border: 0.065rem solid #ccc;
+  border-radius: 3px;
+  background-color: whitesmoke;
+}
+
+.input-group input[type="submit"] {
+  width: 90vw;
+  height: 2.6rem;
+  padding: 10px;
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.input-group input[type="submit"]:hover {
+  background-color: #0e63ac;
+}
+
+.forgot {
+  color: #1877f2;
+}
+
+.or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.or p {
+  padding: 0 4vw;
+}
+
+.or .l {
+  border: 0.001rem solid lightgray;
+  width: 40vw;
+  height: 0.1px;
+}
+
+.or .r {
+  border: 0.001rem solid lightgray;
+  width: 40vw;
+  height: 0.1px;
+}
+
+.create button {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 0.6rem 5.5rem;
+}
+
+.create button:hover {
+  background-color: #52E54A;
+}
